@@ -1,17 +1,13 @@
-/*
-Como obsrevamos en la clase Car no hay ningun metodo constructor, estamos usando el metodo cosntructor por defecto
-Creamos un objeto en memoria de tipo Car. El motodo printDataCar() lo usamso para imprimir
-*/ 
-
 class Main {
     public static void main(String[] args) {
 	    System.out.println("hola mundo");
 
-        Car car = new Car();
-        car.driver = "Marcos";
+        // Instanciando un objeto de clase Account, y otro de clase Car
+        Account driver = new Account("Pepito Perez", "PeP-8");
+        Car car = new Car("AK-47", driver);
         car.passenger = 4;
-        car.license = "AMX0041";
 
+        //Metodo para imprimir
         car.printDataCar();
     }
 }
