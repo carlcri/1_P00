@@ -2,12 +2,15 @@ class Main {
     public static void main(String[] args) {
 	    System.out.println("hola mundo");
 
-        // Instanciando un objeto de clase Account, y otro de clase Car
+        // Instanciando un objeto de clase Account, otro de clase UberX, UberPool, UberBlack, UberVan
         Account driver = new Account("Pepito Perez", "PeP-8");
-        Car car = new Car("AK-47", driver);
-        car.passenger = 4;
+        UberX uberX = new UberX("license", driver, "VW", "2020");
+        UberPool uberPool = new UberPool("license1", new Account("name", "321263"), "Toyota", "2011");
+
 
         //Metodo para imprimir
-        car.printDataCar();
+        uberX.printDataCar();
+        uberPool.printDataCar();
+
     }
 }
